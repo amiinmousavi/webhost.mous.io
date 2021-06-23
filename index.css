@@ -59,13 +59,13 @@ header {
 }
 
 .gallery .photo-lg1{
-    background: url("../gallery/photo003.PNG") no-repeat;
+    background: url("..photo003.PNG") no-repeat;
     height: 400px;
     background-size: cover;
 }
 
 .gallery .photo-lg2{
-    background: url("../gallery/photo004.PNG") no-repeat;
+    background: url("..photo004.PNG") no-repeat;
     height: 400px;
     background-size: cover;
 }
