@@ -1,0 +1,153 @@
+:root {
+    --dark-grey: rgba(0, 0, 0, 0.93);
+    --fruity-red: rgba(232, 53, 53, 0.93);
+    --diamond-grey: #ffffff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-grey);
+    font-family: "Segoe UI";
+}
+
+a{
+
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.logo{
+    color: var(--diamond-grey);
+    border-bottom: 6px solid var(--fruity-red);
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.ico {
+    height: 3em;
+}
+.ico-sm {
+    height: 1em;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.logo, .menu, .nav-menu{
+    position: absolute;
+}
+
+.logo{
+    left: 27px;
+}
+
+
+.menu{
+    cursor: pointer;
+    right: 0;
+    z-index: 2;
+}
+
+.gallery .photo-lg1{
+    background: url("../gallery/photo003.PNG") no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+.gallery .photo-lg2{
+    background: url("../gallery/photo004.PNG") no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+.gallery .photo-lg3{
+    background: url("../gallery/photo007.PNG") no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+.gallery .photo-lg4{
+    background: url("../gallery/photo009.PNG") no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+.nav-menu {
+    position: fixed;
+    visibility: hidden;
+    height: 100vh;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.nav-menu > ul {
+    padding: 90px 27px 0 55px;
+    text-align: right;
+
+}
+
+.nav-menu > ul li {
+    margin-bottom: 20px;
+
+}
+
+.nav-menu > ul li a {
+    color: white;
+    font-size: 1.1rem;
+
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.ham8 .top {
+    stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+}
+.ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+    stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+    //stroke-dashoffset: -20px;
+    transform: rotate(90deg);
+}
+.ham8.active .bottom {
+    stroke-dashoffset: -64px;
+}
+
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--diamond-grey);
+    stroke-width:5.5;
+    stroke-linecap:round;
+}
